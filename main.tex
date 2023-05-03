@@ -267,7 +267,7 @@ where $K \in \mathbb{R}^{n \times n}$ with $K_{i,j} = k(x_i, x_j)$.
 	\item $O(n^3)$ if exact
 	\item $O(n^2)$ with decomposition (e.g., Cholesky), \textbf{but} has to update every time
 	\item $O(nm^2 + m^3)$ with approximation using $m$ pseudopoints (Section III. E. of \cite{shahriari2015taking}) 
-	\item might further reduce if sparsity enforced (e.g., enforcing CAR-ish structure for conditional independence; similar to INLA \cite{rue2017bayesian})
+	\item might further reduce if sparsity enforced on $K^{-1}$ (e.g., enforcing CAR-ish structure for conditional independence; similar to INLA \cite{rue2017bayesian})
 \end{itemize}
 \end{frame}
 
